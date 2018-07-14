@@ -8,5 +8,5 @@
       "params": []
     }
   ],
-  "path": "contracts/CounterApp.sol"
+  "path": "contracts/VotingApp.sol"
 }
