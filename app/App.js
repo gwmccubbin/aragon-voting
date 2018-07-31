@@ -21,8 +21,8 @@ export default class App extends React.Component {
       <AppContainer>
         <div>
           <ObservedCount observable={this.props.observable} />
-          <Button onClick={() => this.props.app.incrementVote()}>Up Vote</Button>
-          <Button onClick={() => this.props.app.decrementVote()}>Down Vote</Button>
+          <Button onClick={() => this.props.app.incrementVote(1)}>Up Vote</Button>
+          <Button onClick={() => this.props.app.decrementVote(1)}>Down Vote</Button>
         </div>
       </AppContainer>
     )
