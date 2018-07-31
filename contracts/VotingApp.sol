@@ -29,7 +29,7 @@ contract VotingApp is AragonApp {
     /**
      * @notice Decrement the counter by `step`
     */
-    function incrementVote() auth(VOTING_ROLE) external {
+    function incrementVote(uint256 step) auth(VOTING_ROLE) external {
         // require(!voters[msg.sender]);
         // require(!votePassed);
 
@@ -47,7 +47,7 @@ contract VotingApp is AragonApp {
     /**
      * @notice Decrement the counter by `step`
      */
-    function decrementVote() auth(VOTING_ROLE) external {
+    function decrementVote(uint256 step) auth(VOTING_ROLE) external {
         // require(!voters[msg.sender]);
         // require(!votePassed);
 
